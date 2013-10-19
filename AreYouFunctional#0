@@ -1,0 +1,49 @@
+Are you Functional? #0 - Programação Funcional e o Haskell
+
+Are you Functional? é uma série de posts sobre programação funcional onde a linguagem Haskell servirá de suporte na componente mais prática dos conteúdos que forem disponibilizados.
+
+Antes de iniciar o escrutínio resta apenas clarificar a intenção com que os posts são escritos. A abordagem sobre o assunto terá um claro foco na forma como quem está a redigir os posts percebe e encara o assunto e não será de todo incompreensível que o conteúdo não corresponda cientificamente à realidade da matéria. Assim sendo o propósito desta série de posts passará por mostrar a forma como cada detalhe foi compreendido durante o estudo do paradigma funcional e se possível tentar passar isso aos enventuais leitores do blog.
+
+- - - 
+
+### Programação funcional
+
+Então o que é isto da programação funcional? Bem, existem vários paradigmas de programação, ou seja, várias formas de estruturação e execução no que diz respeito à forma como se escreve e compõe programas. É nestes paradigmas que a programação funcional se encaixa, ao lado dos paradigmas imperativo, lógico e orientado aos objectos.
+No que diz respeito ao paradigma funcional, um programa não é mais que que a avaliação de uma ou mais funções matemáticas executadas de forma encadeada que dependem fortemente dos valores de entrada ou inputs. 
+Por sua vez, uma função em programação funcional nao é mais que uma função matemática, ou seja, possui uma definição que recebe ou não parametros ou valores de entrada (input) e que através da sua aplicação nestes produz um único resultado ou valor de saída (output). 
+Consideraremos a função matemática 
+
+	f(x) = x * x 
+    
+que pode ser vista, por exemplo, como 
+
+	area(lado) = lado * lado 
+    
+que calcula a àrea de um quadrado dado o valor de um dos lados.
+Poderíamos sem grandes pressas pegar numa caneta e fazer as contas à mão, mas não é isso que interessa a quem quer ser programador. Vamos lá ver como é que isto se faria em Haskell,
+
+	area :: Int -> Int
+	area x = x * x
+    
+Vamos lá tentar decifrar isto. O nome da função é area, até aí não há dúvidas. A função área é uma função matemática que recebe um valor e que devolve a multiplicação desse valor por ele próprio, ou seja, nesta caso recebe um inteiro e devolve outro inteiro tal como é expresso por **Int -> Int**.
+Utilizando agora um interpretador de Haskell, estararíamos livres de ter que voltar a calcular areas de quadrados para o resto da nossa vida, pois é então possível utilizar este pequeno programa da seguinte forma:
+
+	$ghci > area 9
+    81 # resposta do interpretador após avaliar a função com o valor de entrada 9
+
+No próximo post serão abordados tipos de dados e definições de funçoes mais complexas, até lá fica aqui este pequeno exemplo como incentivo.
+
+
+- - - 
+
+Como nem tudo na vida é ler, é aconselhado aos leitores criarem o seu próprio ambiente de desenvolvimento nas suas máquinas e fazerem coisas autonamamente. 
+
+Ficam em baixo alguns links úteis nesse sentido.
+
+Haskell Platform (plataforma de desenvolvimento suportada pelo GHC ou Glasgow Haskell Compiler)
+http://www.haskell.org/platform/
+
+Learn Haskell in 10 minutes (overview sobre a linguagem)
+http://www.haskell.org/haskellwiki/Learn_Haskell_in_10_minutes
+
+De futuro será adicionado aos posts um link onde será possível acompanhar o que o autor do post faz no sentido da computação dos programas através da linha de comandos.
