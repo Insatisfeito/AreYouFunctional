@@ -8,9 +8,9 @@ Antes de iniciar o escrutínio resta apenas clarificar a intenção com que os p
 
 ### Programação funcional
 
-Então o que é isto da programação funcional? Bem, existem vários paradigmas de programação, ou seja, várias formas de estruturação e execução no que diz respeito à forma como se escreve e compõe programas. É nestes paradigmas que a programação funcional se encaixa, ao lado dos paradigmas imperativo, lógico e orientado aos objectos.
+Então o que é isto da programação funcional? Bem, existem vários paradigmas de programação, ou seja, várias formas de estruturação e execução no que diz respeito à forma como se escrevem e compõem programas. É nestes paradigmas que a programação funcional se encaixa, ao lado dos paradigmas imperativo, lógico e orientado aos objectos.
 No que diz respeito ao paradigma funcional, um programa não é mais que que a avaliação de uma ou mais funções matemáticas executadas de forma encadeada que dependem fortemente dos valores de entrada ou inputs. 
-Por sua vez, uma função em programação funcional nao é mais que uma função matemática, ou seja, possui uma definição que recebe ou não parametros ou valores de entrada (input) e que através da sua aplicação nestes produz um único resultado ou valor de saída (output). 
+Por sua vez, uma função em programação funcional não é mais que uma função matemática, ou seja, possui uma definição que recebe ou não parâmetros ou valores de entrada (input) e que através da sua aplicação nestes produz um único resultado ou valor de saída (output). 
 Consideraremos a função matemática 
 
 	f(x) = x * x 
@@ -25,8 +25,8 @@ Poderíamos sem grandes pressas pegar numa caneta e fazer as contas à mão, mas
 	area :: Int -> Int
 	area x = x * x
     
-Vamos lá tentar decifrar isto. O nome da função é area, até aí não há dúvidas. A função área é uma função matemática que recebe um valor e que devolve a multiplicação desse valor por ele próprio, ou seja, nesta caso recebe um inteiro e devolve outro inteiro tal como é expresso por **Int -> Int**.
-Utilizando agora um interpretador de Haskell, estararíamos livres de ter que voltar a calcular areas de quadrados para o resto da nossa vida, pois é então possível utilizar este pequeno programa da seguinte forma:
+Vamos lá tentar decifrar isto. O nome da função é area, até aí não há dúvidas. A função area é uma função matemática que recebe um valor e que devolve a multiplicação desse valor por ele próprio, ou seja, nesta caso recebe um inteiro e devolve outro inteiro tal como é expresso por **Int -> Int**.
+Utilizando agora um interpretador de Haskell, estaríamos livres de ter que voltar a calcular áreas de quadrados para o resto da nossa vida, pois é então possível utilizar este pequeno programa da seguinte forma:
 
 	$ghci > area 9
     81 # resposta do interpretador após avaliar a função com o valor de entrada 9
@@ -36,7 +36,7 @@ No próximo post serão abordados tipos de dados e definições de funçoes mais
 
 - - - 
 
-Como nem tudo na vida é ler, é aconselhado aos leitores criarem o seu próprio ambiente de desenvolvimento nas suas máquinas e fazerem coisas autonamamente. 
+Como nem tudo na vida é ler, é aconselhado aos leitores criarem o seu próprio ambiente de desenvolvimento nas suas máquinas e fazerem coisas de forma mais autónoma. 
 
 Ficam em baixo alguns links úteis nesse sentido.
 
